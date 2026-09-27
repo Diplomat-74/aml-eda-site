@@ -19,6 +19,7 @@
   --teal: #2F6F63;
   --line: #D7DBDD;
   --line-soft: #E4E7E8;
+  --hero-bg: #1C2A3A;
   box-sizing: border-box;
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
@@ -46,9 +47,8 @@ body {
 h1, h2, h3 { font-family: 'Source Serif 4', serif; font-weight: 600; color: var(--ink); margin: 0; }
 
 .hero {
-  background: var(--navy); color: #EEF0F0; padding: 64px 24px 48px;
+  background: var(--hero-bg); color: #EEF0F0; padding: 64px 24px 48px;
 }
-:root[data-theme="dark"] .hero, @media (prefers-color-scheme: dark) { }
 .hero-inner { max-width: 780px; margin: 0 auto; }
 .hero .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #9AACC0; letter-spacing: 0.02em; }
 .hero h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.15; color: #F4F5F3; margin-top: 10px; max-width: 18ch; }
